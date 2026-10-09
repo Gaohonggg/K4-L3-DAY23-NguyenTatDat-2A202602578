@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.16, pytest-8.3.4, pluggy-1.6.0 -- /Users/nguyendat/Documents/VIN/LAB/K4-L3-DAY23-NguyenTatDat-2A202602578/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/nguyendat/Documents/VIN/LAB/K4-L3-DAY23-NguyenTatDat-2A202602578
+plugins: anyio-4.15.1
+collecting ... collected 23 items
+
+tests/test_failover.py::test_rpo_dem_dung_so_doc_bi_mat PASSED           [  4%]
+tests/test_failover.py::test_health_checker_can_threshold_lien_tiep PASSED [  8%]
+tests/test_failover.py::test_failover_khong_cutover_khi_target_chua_ready PASSED [ 13%]
+tests/test_rto_evidence.py::test_drill1_ton_tai_va_khong_phuc_hoi PASSED [ 17%]
+tests/test_rto_evidence.py::test_drill2_hop_le PASSED                    [ 21%]
+tests/test_rto_evidence.py::test_rto_do_duoc_bang_timestamp PASSED       [ 26%]
+tests/test_rto_evidence.py::test_health_check_interval_duoc_ghi_lai PASSED [ 30%]
+tests/test_rto_evidence.py::test_rpo_duoc_do_chu_khong_uoc_luong PASSED  [ 34%]
+tests/test_rto_evidence.py::test_evidence_table_tro_vao_file_that PASSED [ 39%]
+tests/test_rto_evidence.py::test_chaos_khong_giet_ca_hai_region PASSED   [ 43%]
+tests/test_rto_evidence.py::test_evidence_table_da_dien_that PASSED      [ 47%]
+tests/test_rto_evidence.py::test_so_trong_bang_khop_voi_so_trong_log PASSED [ 52%]
+tests/test_rto_evidence.py::test_postmortem_co_gap_analysis PASSED       [ 56%]
+dr/tests/test_safety.py::test_probe_requires_readiness_payload[200-body0-True] PASSED [ 60%]
+dr/tests/test_safety.py::test_probe_requires_readiness_payload[200-body1-False] PASSED [ 65%]
+dr/tests/test_safety.py::test_probe_requires_readiness_payload[503-body2-False] PASSED [ 69%]
+dr/tests/test_safety.py::test_probe_requires_readiness_payload[200-body3-False] PASSED [ 73%]
+dr/tests/test_safety.py::test_probe_timeout_is_unhealthy PASSED          [ 78%]
+dr/tests/test_safety.py::test_transient_failures_do_not_emit_outage PASSED [ 82%]
+dr/tests/test_safety.py::test_restore_failure_does_not_publish_cutover PASSED [ 86%]
+dr/tests/test_safety.py::test_operator_decline_never_calls_failover PASSED [ 91%]
+dr/tests/test_safety.py::test_runbook_calls_failover_once_and_checks_ten_requests PASSED [ 95%]
+dr/tests/test_safety.py::test_confirm_defaults_to_no PASSED              [100%]
+
+============================== 23 passed in 0.40s ==============================

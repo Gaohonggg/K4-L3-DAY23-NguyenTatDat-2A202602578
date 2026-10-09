@@ -15,10 +15,15 @@ reports/*.json
 !reports/failover-events.jsonl
 !reports/health-events.jsonl
 !reports/replication.jsonl
+!reports/runbook-run.jsonl
+!reports/measure-drill-1.json
+!reports/measure-drill-2.json
 
 # File tam do test/thu nghiem sinh ra (khong phai bang chung)
 reports/_*.jsonl
-reports/runbook-run.jsonl
+
+# Output terminal de debug local; evidence nop bai luu rieng theo rubric
+logs/
 
 # Python
 __pycache__/
